@@ -6,7 +6,7 @@ on: [push]
         with:
           name: webpack artifacts
           path: public/
-  build:
+    needs: build
 
     runs-on: ubuntu-latest
 
